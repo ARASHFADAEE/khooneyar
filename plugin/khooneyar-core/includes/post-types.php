@@ -111,6 +111,37 @@ function khy_resolve_root_services( $qv ) {
 	return $qv;
 }
 
+/**
+ * /tehran/<slug>/ belongs to the neighborhood CPT rewrite. When no published
+ * neighborhood has that slug but a child page tehran/<slug> exists, serve the page
+ * instead of a 404, so pages and CPT neighborhoods can share the same URL scheme.
+ */
+add_filter( 'request', 'khy_neighborhood_page_fallback', 20 );
+function khy_neighborhood_page_fallback( $qv ) {
+	if ( is_admin() || empty( $qv['neighborhood'] ) || ( ! empty( $qv['post_type'] ) && 'neighborhood' !== $qv['post_type'] ) ) {
+		return $qv;
+	}
+	$slug = trim( (string) $qv['neighborhood'], '/' );
+	if ( '' === $slug || false !== strpos( $slug, '/' ) ) {
+		return $qv;
+	}
+	$hood = get_page_by_path( $slug, OBJECT, 'neighborhood' );
+	if ( $hood && 'publish' === $hood->post_status ) {
+		return $qv;
+	}
+	$page = get_page_by_path( 'tehran/' . $slug, OBJECT, 'page' );
+	if ( ! $page ) {
+		return $qv;
+	}
+	$new = array( 'pagename' => 'tehran/' . $slug );
+	foreach ( array( 'page', 'preview', 'cpage', 'embed' ) as $keep ) {
+		if ( isset( $qv[ $keep ] ) && '' !== $qv[ $keep ] ) {
+			$new[ $keep ] = $qv[ $keep ];
+		}
+	}
+	return $new;
+}
+
 /* ------------------------------------------------------------------
  * 301 redirects from Persian (old / alternate) slugs to the Latin URL.
  * Aliases are stored in the repeatable meta _khy_alias (one path per row).

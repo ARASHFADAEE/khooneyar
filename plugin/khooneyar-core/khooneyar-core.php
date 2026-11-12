@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Khooneyar Core (خونه‌یار)
  * Description:       نوع نوشته‌های خدمت و محله، فرم سفارش داخلی، مدیریت سفارش‌ها و تنظیمات برند. داده‌ها با تغییر قالب از بین نمی‌روند.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.2
  * Requires PHP:      7.4
  * Author:            Arash Fadaee
@@ -14,7 +14,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'KHY_CORE_VERSION', '1.0.0' );
+define( 'KHY_CORE_VERSION', '1.0.1' );
 define( 'KHY_CORE_FILE', __FILE__ );
 define( 'KHY_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'KHY_CORE_URL', plugin_dir_url( __FILE__ ) );
