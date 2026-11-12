@@ -1,0 +1,16 @@
+design-pass service mobile perf 100 a11y 100 bp 100 seo 100 | LCP 1.5 s CLS 0 TBT 20 ms
+design-pass service desktop perf 100 a11y 100 bp 100 seo 100 | LCP 0.4 s CLS 0 TBT 0 ms
+design-pass hood mobile perf 100 a11y 100 bp 100 seo 100 | LCP 1.5 s CLS 0 TBT 0 ms
+design-pass hood desktop perf 100 a11y 100 bp 100 seo 100 | LCP 0.4 s CLS 0 TBT 0 ms
+design-pass post mobile perf 100 a11y 100 bp 100 seo 100 | LCP 1.5 s CLS 0 TBT 0 ms
+design-pass post desktop perf 100 a11y 100 bp 100 seo 100 | LCP 0.4 s CLS 0 TBT 0 ms
+design-pass archive mobile perf 100 a11y 100 bp 100 seo 100 | LCP 1.7 s CLS 0 TBT 0 ms
+design-pass archive desktop perf 100 a11y 100 bp 100 seo 100 | LCP 0.4 s CLS 0 TBT 0 ms
+design-pass realservice mobile perf 100 a11y 100 bp 100 seo 100 | LCP 1.5 s CLS 0 TBT 0 ms
+design-pass realservice desktop perf 100 a11y 100 bp 100 seo 100 | LCP 0.4 s CLS 0 TBT 0 ms
+design-pass realhood mobile perf 100 a11y 100 bp 100 seo 100 | LCP 1.5 s CLS 0 TBT 0 ms
+design-pass realhood desktop perf 100 a11y 100 bp 100 seo 100 | LCP 0.4 s CLS 0 TBT 0 ms
+design-pass realpost mobile perf 100 a11y 100 bp 100 seo 100 | LCP 1.5 s CLS 0 TBT 0 ms
+design-pass realpost desktop perf 100 a11y 100 bp 100 seo 100 | LCP 0.4 s CLS 0 TBT 0 ms
+design-pass price mobile perf 100 a11y 100 bp 100 seo 100 | LCP 1.5 s CLS 0 TBT 0 ms
+design-pass price desktop perf 100 a11y 100 bp 100 seo 100 | LCP 0.4 s CLS 0 TBT 0 ms

@@ -99,7 +99,7 @@ PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, Breadc
 PASS   imgs have alt /nazafatchi-khanom-tehran/
 PASS 200 /tehran/
 PASS   one <h1> (1) /tehran/
-PASS   title (37 chars) /tehran/
+PASS   title (39 chars) /tehran/
 PASS   meta description (146 chars) /tehran/
 PASS   rtl /tehran/
 PASS   no jquery /tehran/
@@ -250,7 +250,7 @@ PASS bad nonce rejected (403)
 PASS invalid phone -> 422 + Persian error: شمارهٔ موبایل معتبر نیست. مثال: ۰۹۱۲۱۲۳۴۵۶۷
 PASS missing name/service -> field errors
 PASS honeypot silently accepted, not stored
-PASS valid order stored: KH-1055
+PASS valid order stored: KH-1075
 PASS duplicate phone within 5 min -> 429 (429)
 PASS per-IP rate limit kicks in
 PASS wp-content/debug.log empty (no PHP notices/warnings)
