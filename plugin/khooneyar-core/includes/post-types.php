@@ -51,6 +51,7 @@ function khy_register_post_types() {
 				'not_found'     => 'محله‌ای پیدا نشد',
 				'all_items'     => 'همهٔ محله‌ها',
 				'menu_name'     => 'محله‌ها',
+				'archives'      => 'خدمات منزل در محله‌های تهران',
 			),
 			'public'       => true,
 			'show_in_rest' => true,
@@ -64,6 +65,18 @@ function khy_register_post_types() {
 			),
 		)
 	);
+}
+
+/**
+ * Title of the neighborhood archive (/tehran/) as used by the document <title> and archive-title functions
+ * when no SEO plugin overrides it. Same text as the theme's H1 of that archive.
+ */
+add_filter( 'post_type_archive_title', 'khy_neighborhood_archive_title_filter', 10, 2 );
+function khy_neighborhood_archive_title_filter( $title, $post_type ) {
+	if ( 'neighborhood' === $post_type && ! is_admin() ) {
+		return 'خدمات منزل در محله‌های تهران';
+	}
+	return $title;
 }
 
 /**
@@ -97,7 +110,12 @@ function khy_resolve_root_services( $qv ) {
 	} else {
 		return $qv;
 	}
-	if ( '' === $path || false !== strpos( $path, '/' ) || get_page_by_path( $path ) ) {
+	if ( '' === $path || false !== strpos( $path, '/' ) ) {
+		return $qv;
+	}
+	// Only a published page wins; a draft/private page with the same slug must not hide the service.
+	$page = get_page_by_path( $path );
+	if ( $page && 'publish' === $page->post_status ) {
 		return $qv;
 	}
 	$service = get_page_by_path( $path, OBJECT, 'service' );
@@ -142,7 +160,7 @@ function khy_neighborhood_page_fallback( $qv ) {
 		return $qv;
 	}
 	$page = get_page_by_path( 'tehran/' . $slug, OBJECT, 'page' );
-	if ( ! $page ) {
+	if ( ! $page || 'publish' !== $page->post_status ) {
 		return $qv;
 	}
 	$new = array( 'pagename' => 'tehran/' . $slug );
