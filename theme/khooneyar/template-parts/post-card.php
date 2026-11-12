@@ -13,6 +13,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php endif; ?>
 	<time class="meta" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( khy_jalali( get_the_date( 'Y-m-d' ) ) ); ?></time>
 	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	<p><?php echo esc_html( wp_trim_words( get_the_excerpt(), 28, '…' ) ); ?></p>
+	<?php $ex = khy_card_excerpt( get_post(), 28 ); ?>
+	<?php if ( $ex ) : ?><p><?php echo esc_html( $ex ); ?></p><?php endif; ?>
 	<a class="card-link" href="<?php the_permalink(); ?>">ادامهٔ مطلب <?php echo khy_icon( 'arrow' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></a>
 </article>

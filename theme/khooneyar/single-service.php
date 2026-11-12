@@ -29,6 +29,7 @@ while ( have_posts() ) :
 				<?php if ( khy_lead() ) : ?>
 					<p class="lead"><?php echo esc_html( khy_lead() ); ?></p>
 				<?php endif; ?>
+				<?php get_template_part( 'template-parts/entry-meta', null, array( 'updated' => true ) ); ?>
 				<ul class="chips">
 					<?php foreach ( $chips as $c ) : ?>
 						<li><?php echo khy_icon( $c[0] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> <?php echo esc_html( $c[1] ); ?></li>
@@ -53,11 +54,13 @@ while ( have_posts() ) :
 		</div>
 	</section>
 
-	<section class="section" aria-label="جزئیات خدمت">
-		<div class="container narrow prose">
-			<?php the_content(); ?>
-		</div>
-	</section>
+	<?php if ( khy_has_content() ) : ?>
+		<section class="section" aria-label="جزئیات خدمت">
+			<div class="container narrow prose entry-content">
+				<?php the_content(); ?>
+			</div>
+		</section>
+	<?php endif; ?>
 
 	<?php get_template_part( 'template-parts/how-to-order' ); ?>
 

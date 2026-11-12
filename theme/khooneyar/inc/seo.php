@@ -42,7 +42,7 @@ function khy_document_title( $title ) {
 		}
 	}
 	if ( is_post_type_archive( 'neighborhood' ) ) {
-		return 'محله‌های تحت پوشش در تهران | ' . $name;
+		return khy_neighborhood_archive_title() . ' | ' . $name;
 	}
 	return $title;
 }

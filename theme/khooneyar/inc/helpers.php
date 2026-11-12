@@ -258,3 +258,12 @@ function khy_page_url( $slug ) {
 function khy_kses_min( $html ) {
 	return wp_kses( $html, array( 'a' => array( 'href' => true ), 'strong' => array(), 'em' => array(), 'br' => array() ) );
 }
+
+/**
+ * H1 / <title> text of the neighborhood hub (/tehran/). Same string as the plugin's archive label.
+ *
+ * @return string
+ */
+function khy_neighborhood_archive_title() {
+	return 'خدمات منزل در محله‌های تهران';
+}

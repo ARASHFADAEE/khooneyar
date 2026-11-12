@@ -127,4 +127,23 @@
 		var sel = document.querySelector('#order select[name="khy_service"]');
 		if (sel && a.dataset.service) { sel.value = a.dataset.service; }
 	});
+
+	// Scroll hint for wide tables inside post content (shown only when the table actually overflows).
+	var wraps = document.querySelectorAll('.khy-table-wrap');
+	if (wraps.length) {
+		var hints = [];
+		wraps.forEach(function (w) {
+			var h = document.createElement('p');
+			h.className = 'table-hint';
+			h.setAttribute('aria-hidden', 'true');
+			h.textContent = 'برای دیدن همهٔ ستون‌ها، جدول را به کنار بکشید.';
+			w.parentNode.insertBefore(h, w);
+			hints.push([w, h]);
+		});
+		var check = function () {
+			hints.forEach(function (p) { p[1].classList.toggle('is-on', p[0].scrollWidth > p[0].clientWidth + 1); });
+		};
+		check();
+		window.addEventListener('resize', check);
+	}
 })();

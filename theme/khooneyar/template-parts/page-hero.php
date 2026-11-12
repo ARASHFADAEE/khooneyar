@@ -1,6 +1,6 @@
 <?php
 /**
- * Page hero: breadcrumbs, H1 and lead. Args: h1, lead, badges (array of [icon,text]).
+ * Page hero: breadcrumbs, H1 and lead. Args: h1, lead, badges (array of [icon,text]), meta (entry-meta args).
  *
  * @package Khooneyar
  */
@@ -18,6 +18,11 @@ $chips = isset( $args['badges'] ) ? $args['badges'] : array();
 		<?php if ( $lead ) : ?>
 			<p class="lead"><?php echo esc_html( $lead ); ?></p>
 		<?php endif; ?>
+		<?php
+		if ( ! empty( $args['meta'] ) ) {
+			get_template_part( 'template-parts/entry-meta', null, $args['meta'] );
+		}
+		?>
 		<?php if ( $chips ) : ?>
 			<ul class="chips">
 				<?php foreach ( $chips as $c ) : ?>
