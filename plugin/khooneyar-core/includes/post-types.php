@@ -112,13 +112,25 @@ function khy_resolve_root_services( $qv ) {
 }
 
 /**
- * /tehran/<slug>/ belongs to the neighborhood CPT rewrite. When no published
+ * /tehran/ and /tehran/<slug>/ belong to the neighborhood CPT rewrite. A page at /tehran/
+ * replaces the CPT archive. When no published
  * neighborhood has that slug but a child page tehran/<slug> exists, serve the page
  * instead of a 404, so pages and CPT neighborhoods can share the same URL scheme.
  */
 add_filter( 'request', 'khy_neighborhood_page_fallback', 20 );
 function khy_neighborhood_page_fallback( $qv ) {
-	if ( is_admin() || empty( $qv['neighborhood'] ) || ( ! empty( $qv['post_type'] ) && 'neighborhood' !== $qv['post_type'] ) ) {
+	if ( is_admin() ) {
+		return $qv;
+	}
+	// /tehran/ itself: a published page with path "tehran" wins over the CPT archive (page 1 only).
+	if ( empty( $qv['neighborhood'] ) && isset( $qv['post_type'] ) && 'neighborhood' === $qv['post_type'] && empty( $qv['paged'] ) && empty( $qv['feed'] ) ) {
+		$hub = get_page_by_path( 'tehran', OBJECT, 'page' );
+		if ( $hub && 'publish' === $hub->post_status ) {
+			return array( 'pagename' => 'tehran' );
+		}
+		return $qv;
+	}
+	if ( empty( $qv['neighborhood'] ) || ( ! empty( $qv['post_type'] ) && 'neighborhood' !== $qv['post_type'] ) ) {
 		return $qv;
 	}
 	$slug = trim( (string) $qv['neighborhood'], '/' );
