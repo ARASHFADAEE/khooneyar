@@ -642,3 +642,9 @@ function khy_order_save( $post_id ) {
 		update_post_meta( $post_id, '_khy_admin_note', sanitize_textarea_field( wp_unslash( $_POST['khy_admin_note'] ) ) );
 	}
 }
+
+// Orders are stored as "private" posts; hide the "— Private" suffix in titles.
+add_filter( 'private_title_format', 'khy_order_private_title', 10, 2 );
+function khy_order_private_title( $format, $post ) {
+	return ( $post && 'order_request' === $post->post_type ) ? '%s' : $format;
+}

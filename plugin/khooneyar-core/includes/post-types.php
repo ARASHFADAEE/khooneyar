@@ -217,3 +217,12 @@ function khy_set_neighborhood_services( $neighborhood_id, $service_ids ) {
 		}
 	}
 }
+
+/**
+ * Services and neighborhoods are structured landing pages (long HTML + meta boxes):
+ * use the classic editor for them. Pages and blog posts keep the block editor.
+ */
+add_filter( 'use_block_editor_for_post_type', 'khy_classic_for_cpts', 10, 2 );
+function khy_classic_for_cpts( $use, $post_type ) {
+	return in_array( $post_type, array( 'service', 'neighborhood' ), true ) ? false : $use;
+}

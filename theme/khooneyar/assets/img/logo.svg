@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="64" viewBox="0 0 260 64" role="img" aria-label="خونه‌یار">
+  <title>خونه‌یار — خدمات منزل مطمئن در تهران</title>
+  <g transform="translate(200 8)">
+    <rect width="48" height="48" rx="12" fill="#0F766E"/>
+    <path d="M10 24 24 12l14 12v13a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2z" fill="#fff"/>
+    <path d="m17.5 29 4.5 4.5L31 24" fill="none" stroke="#F59E0B" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="190" y="42" text-anchor="end" font-family="Vazirmatn, Tahoma, sans-serif" font-size="30" font-weight="800" fill="#0F766E">خونه‌یار</text>
+</svg>
