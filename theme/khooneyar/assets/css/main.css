@@ -51,7 +51,7 @@ p{margin:0 0 1em}
 
 /* Hero */
 .hero{background:linear-gradient(160deg,#0b5a54 0%,#0F766E 55%,#14938a 100%);color:#fff;padding:28px 0 36px}
-.hero a{color:inherit}
+.hero a:not(.btn){color:inherit}
 .hero-grid{display:grid;gap:22px}
 .hero h1{color:#fff}
 .lead{font-size:1.06rem;color:var(--c-muted);max-width:60ch}
@@ -158,7 +158,8 @@ p{margin:0 0 1em}
 .order-success{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:14px;padding:18px}
 .order-success[hidden]{display:none}
 .order-success h3{display:flex;align-items:center;gap:8px;color:#065f46}
-.order-success .btn{margin:4px 6px 0 0}
+.order-success{scroll-margin-top:84px}
+.order-success .btn{margin-top:10px;width:100%}
 .is-loading .btn-primary{opacity:.7;pointer-events:none}
 
 /* Contact */

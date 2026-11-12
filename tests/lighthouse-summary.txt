@@ -1,0 +1,8 @@
+home mobile perf 100 a11y 100 bp 100 seo 100 | FCP 1.1 s LCP 1.5 s CLS 0 TBT 0 ms
+home desktop perf 100 a11y 100 bp 100 seo 100 | FCP 0.3 s LCP 0.4 s CLS 0 TBT 0 ms
+service mobile perf 100 a11y 100 bp 100 seo 100 | FCP 1.1 s LCP 1.5 s CLS 0 TBT 0 ms
+service desktop perf 100 a11y 100 bp 100 seo 100 | FCP 0.3 s LCP 0.4 s CLS 0 TBT 0 ms
+price mobile perf 100 a11y 100 bp 100 seo 100 | FCP 1.1 s LCP 1.5 s CLS 0 TBT 0 ms
+price desktop perf 100 a11y 100 bp 100 seo 100 | FCP 0.3 s LCP 0.4 s CLS 0 TBT 0 ms
+hood mobile perf 100 a11y 100 bp 100 seo 100 | FCP 0.9 s LCP 1.5 s CLS 0 TBT 0 ms
+hood desktop perf 100 a11y 100 bp 100 seo 100 | FCP 0.3 s LCP 0.4 s CLS 0 TBT 0 ms

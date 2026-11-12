@@ -8,6 +8,21 @@
 
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * Post ID whose SEO fields apply to the current view (handles the posts page /blog/).
+ *
+ * @return int
+ */
+function khy_context_id() {
+	if ( is_singular() ) {
+		return (int) get_queried_object_id();
+	}
+	if ( is_home() && ! is_front_page() ) {
+		return (int) get_option( 'page_for_posts' );
+	}
+	return 0;
+}
+
 add_filter( 'document_title_separator', 'khy_title_sep' );
 function khy_title_sep() {
 	return '|';
@@ -19,8 +34,9 @@ function khy_document_title( $title ) {
 		return $title;
 	}
 	$name = get_bloginfo( 'name' );
-	if ( is_singular() ) {
-		$custom = get_post_meta( get_queried_object_id(), '_khy_seo_title', true );
+	$cid = khy_context_id();
+	if ( $cid ) {
+		$custom = get_post_meta( $cid, '_khy_seo_title', true );
 		if ( $custom ) {
 			return $custom;
 		}
@@ -37,9 +53,9 @@ function khy_document_title( $title ) {
  * @return string
  */
 function khy_meta_description() {
-	if ( is_singular() ) {
-		$id = get_queried_object_id();
-		$d  = get_post_meta( $id, '_khy_seo_desc', true );
+	$id = khy_context_id();
+	if ( $id ) {
+		$d = get_post_meta( $id, '_khy_seo_desc', true );
 		if ( $d ) {
 			return $d;
 		}

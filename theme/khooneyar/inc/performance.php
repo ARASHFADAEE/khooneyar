@@ -64,3 +64,6 @@ function khy_robots( $robots ) {
 	}
 	return $robots;
 }
+
+/** No comments → no comments feed link. */
+add_filter( 'feed_links_show_comments_feed', '__return_false' );
