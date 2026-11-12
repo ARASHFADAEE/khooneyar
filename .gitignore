@@ -1,0 +1,10 @@
+# local test environment
+/env/
+/wp/
+/db/
+/tmp/
+/screens-raw/
+*.zip
+*.log
+node_modules/
+.DS_Store
