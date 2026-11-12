@@ -1,0 +1,258 @@
+PASS 200 /
+PASS   one <h1> (1) /
+PASS   title (39 chars) /
+PASS   meta description (131 chars) /
+PASS   rtl /
+PASS   no jquery /
+PASS   exactly one JSON-LD block (1) /
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebSite, WebPage, FAQPage /
+PASS   imgs have alt /
+PASS 200 /nazafat-manzel-tehran/
+PASS   one <h1> (1) /nazafat-manzel-tehran/
+PASS   title (55 chars) /nazafat-manzel-tehran/
+PASS   meta description (124 chars) /nazafat-manzel-tehran/
+PASS   rtl /nazafat-manzel-tehran/
+PASS   no jquery /nazafat-manzel-tehran/
+PASS   exactly one JSON-LD block (1) /nazafat-manzel-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, Service, FAQPage /nazafat-manzel-tehran/
+PASS   imgs have alt /nazafat-manzel-tehran/
+PASS 200 /nazafat-fori-tehran/
+PASS   one <h1> (1) /nazafat-fori-tehran/
+PASS   title (38 chars) /nazafat-fori-tehran/
+PASS   meta description (137 chars) /nazafat-fori-tehran/
+PASS   rtl /nazafat-fori-tehran/
+PASS   no jquery /nazafat-fori-tehran/
+PASS   exactly one JSON-LD block (1) /nazafat-fori-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, Service, FAQPage /nazafat-fori-tehran/
+PASS   imgs have alt /nazafat-fori-tehran/
+PASS 200 /nazafat-rahpele-tehran/
+PASS   one <h1> (1) /nazafat-rahpele-tehran/
+PASS   title (35 chars) /nazafat-rahpele-tehran/
+PASS   meta description (126 chars) /nazafat-rahpele-tehran/
+PASS   rtl /nazafat-rahpele-tehran/
+PASS   no jquery /nazafat-rahpele-tehran/
+PASS   exactly one JSON-LD block (1) /nazafat-rahpele-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, Service, FAQPage /nazafat-rahpele-tehran/
+PASS   imgs have alt /nazafat-rahpele-tehran/
+PASS 200 /nazafat-daftar-sherkat-tehran/
+PASS   one <h1> (1) /nazafat-daftar-sherkat-tehran/
+PASS   title (47 chars) /nazafat-daftar-sherkat-tehran/
+PASS   meta description (135 chars) /nazafat-daftar-sherkat-tehran/
+PASS   rtl /nazafat-daftar-sherkat-tehran/
+PASS   no jquery /nazafat-daftar-sherkat-tehran/
+PASS   exactly one JSON-LD block (1) /nazafat-daftar-sherkat-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, Service, FAQPage /nazafat-daftar-sherkat-tehran/
+PASS   imgs have alt /nazafat-daftar-sherkat-tehran/
+PASS 200 /loolekesh-fori-tehran/
+PASS   one <h1> (1) /loolekesh-fori-tehran/
+PASS   title (31 chars) /loolekesh-fori-tehran/
+PASS   meta description (138 chars) /loolekesh-fori-tehran/
+PASS   rtl /loolekesh-fori-tehran/
+PASS   no jquery /loolekesh-fori-tehran/
+PASS   exactly one JSON-LD block (1) /loolekesh-fori-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, Service, FAQPage /loolekesh-fori-tehran/
+PASS   imgs have alt /loolekesh-fori-tehran/
+PASS 200 /loolekesh-sayyar-tehran/
+PASS   one <h1> (1) /loolekesh-sayyar-tehran/
+PASS   title (37 chars) /loolekesh-sayyar-tehran/
+PASS   meta description (127 chars) /loolekesh-sayyar-tehran/
+PASS   rtl /loolekesh-sayyar-tehran/
+PASS   no jquery /loolekesh-sayyar-tehran/
+PASS   exactly one JSON-LD block (1) /loolekesh-sayyar-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, Service, FAQPage /loolekesh-sayyar-tehran/
+PASS   imgs have alt /loolekesh-sayyar-tehran/
+PASS 200 /loolebazkoni-tehran/
+PASS   one <h1> (1) /loolebazkoni-tehran/
+PASS   title (29 chars) /loolebazkoni-tehran/
+PASS   meta description (133 chars) /loolebazkoni-tehran/
+PASS   rtl /loolebazkoni-tehran/
+PASS   no jquery /loolebazkoni-tehran/
+PASS   exactly one JSON-LD block (1) /loolebazkoni-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, Service, FAQPage /loolebazkoni-tehran/
+PASS   imgs have alt /loolebazkoni-tehran/
+PASS 200 /nasht-yabi-loole-tehran/
+PASS   one <h1> (1) /nasht-yabi-loole-tehran/
+PASS   title (45 chars) /nasht-yabi-loole-tehran/
+PASS   meta description (127 chars) /nasht-yabi-loole-tehran/
+PASS   rtl /nasht-yabi-loole-tehran/
+PASS   no jquery /nasht-yabi-loole-tehran/
+PASS   exactly one JSON-LD block (1) /nasht-yabi-loole-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, Service, FAQPage /nasht-yabi-loole-tehran/
+PASS   imgs have alt /nasht-yabi-loole-tehran/
+PASS 200 /gheymat-nazafat-manzel/
+PASS   one <h1> (1) /gheymat-nazafat-manzel/
+PASS   title (39 chars) /gheymat-nazafat-manzel/
+PASS   meta description (128 chars) /gheymat-nazafat-manzel/
+PASS   rtl /gheymat-nazafat-manzel/
+PASS   no jquery /gheymat-nazafat-manzel/
+PASS   exactly one JSON-LD block (1) /gheymat-nazafat-manzel/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, FAQPage /gheymat-nazafat-manzel/
+PASS   imgs have alt /gheymat-nazafat-manzel/
+PASS 200 /nazafatchi-khanom-tehran/
+PASS   one <h1> (1) /nazafatchi-khanom-tehran/
+PASS   title (38 chars) /nazafatchi-khanom-tehran/
+PASS   meta description (128 chars) /nazafatchi-khanom-tehran/
+PASS   rtl /nazafatchi-khanom-tehran/
+PASS   no jquery /nazafatchi-khanom-tehran/
+PASS   exactly one JSON-LD block (1) /nazafatchi-khanom-tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, FAQPage /nazafatchi-khanom-tehran/
+PASS   imgs have alt /nazafatchi-khanom-tehran/
+PASS 200 /tehran/
+PASS   one <h1> (1) /tehran/
+PASS   title (37 chars) /tehran/
+PASS   meta description (146 chars) /tehran/
+PASS   rtl /tehran/
+PASS   no jquery /tehran/
+PASS   exactly one JSON-LD block (1) /tehran/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /tehran/
+PASS   imgs have alt /tehran/
+PASS 200 /tehran/enghelab/
+PASS   one <h1> (1) /tehran/enghelab/
+PASS   title (36 chars) /tehran/enghelab/
+PASS   meta description (122 chars) /tehran/enghelab/
+PASS   rtl /tehran/enghelab/
+PASS   no jquery /tehran/enghelab/
+PASS   exactly one JSON-LD block (1) /tehran/enghelab/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, FAQPage /tehran/enghelab/
+PASS   imgs have alt /tehran/enghelab/
+PASS 200 /tehran/felestin/
+PASS   one <h1> (1) /tehran/felestin/
+PASS   title (36 chars) /tehran/felestin/
+PASS   meta description (121 chars) /tehran/felestin/
+PASS   rtl /tehran/felestin/
+PASS   no jquery /tehran/felestin/
+PASS   exactly one JSON-LD block (1) /tehran/felestin/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /tehran/felestin/
+PASS   imgs have alt /tehran/felestin/
+PASS 200 /tehran/yousefabad/
+PASS   one <h1> (1) /tehran/yousefabad/
+PASS   title (30 chars) /tehran/yousefabad/
+PASS   meta description (128 chars) /tehran/yousefabad/
+PASS   rtl /tehran/yousefabad/
+PASS   no jquery /tehran/yousefabad/
+PASS   exactly one JSON-LD block (1) /tehran/yousefabad/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, FAQPage /tehran/yousefabad/
+PASS   imgs have alt /tehran/yousefabad/
+PASS 200 /tehran/hafte-tir/
+PASS   one <h1> (1) /tehran/hafte-tir/
+PASS   title (24 chars) /tehran/hafte-tir/
+PASS   meta description (126 chars) /tehran/hafte-tir/
+PASS   rtl /tehran/hafte-tir/
+PASS   no jquery /tehran/hafte-tir/
+PASS   exactly one JSON-LD block (1) /tehran/hafte-tir/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /tehran/hafte-tir/
+PASS   imgs have alt /tehran/hafte-tir/
+PASS 200 /tehran/kargar/
+PASS   one <h1> (1) /tehran/kargar/
+PASS   title (29 chars) /tehran/kargar/
+PASS   meta description (134 chars) /tehran/kargar/
+PASS   rtl /tehran/kargar/
+PASS   no jquery /tehran/kargar/
+PASS   exactly one JSON-LD block (1) /tehran/kargar/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, FAQPage /tehran/kargar/
+PASS   imgs have alt /tehran/kargar/
+PASS 200 /tehran/keshavarz/
+PASS   one <h1> (1) /tehran/keshavarz/
+PASS   title (23 chars) /tehran/keshavarz/
+PASS   meta description (117 chars) /tehran/keshavarz/
+PASS   rtl /tehran/keshavarz/
+PASS   no jquery /tehran/keshavarz/
+PASS   exactly one JSON-LD block (1) /tehran/keshavarz/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /tehran/keshavarz/
+PASS   imgs have alt /tehran/keshavarz/
+PASS 200 /tehran/jomhuri/
+PASS   one <h1> (1) /tehran/jomhuri/
+PASS   title (24 chars) /tehran/jomhuri/
+PASS   meta description (125 chars) /tehran/jomhuri/
+PASS   rtl /tehran/jomhuri/
+PASS   no jquery /tehran/jomhuri/
+PASS   exactly one JSON-LD block (1) /tehran/jomhuri/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /tehran/jomhuri/
+PASS   imgs have alt /tehran/jomhuri/
+PASS 200 /darbare-ma/
+PASS   one <h1> (1) /darbare-ma/
+PASS   title (37 chars) /darbare-ma/
+PASS   meta description (124 chars) /darbare-ma/
+PASS   rtl /darbare-ma/
+PASS   no jquery /darbare-ma/
+PASS   exactly one JSON-LD block (1) /darbare-ma/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /darbare-ma/
+PASS   imgs have alt /darbare-ma/
+PASS 200 /tamas/
+PASS   one <h1> (1) /tamas/
+PASS   title (40 chars) /tamas/
+PASS   meta description (108 chars) /tamas/
+PASS   rtl /tamas/
+PASS   no jquery /tamas/
+PASS   exactly one JSON-LD block (1) /tamas/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /tamas/
+PASS   imgs have alt /tamas/
+PASS 200 /blog/
+PASS   one <h1> (1) /blog/
+PASS   title (29 chars) /blog/
+PASS   meta description (109 chars) /blog/
+PASS   rtl /blog/
+PASS   no jquery /blog/
+PASS   exactly one JSON-LD block (1) /blog/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /blog/
+PASS   imgs have alt /blog/
+PASS 200 /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS   one <h1> (1) /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS   title (46 chars) /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS   meta description (121 chars) /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS   rtl /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS   no jquery /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS   exactly one JSON-LD block (1) /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS   imgs have alt /blog/gheymat-nazafat-manzel-tehran-1405/
+PASS 200 /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS   one <h1> (1) /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS   title (44 chars) /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS   meta description (116 chars) /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS   rtl /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS   no jquery /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS   exactly one JSON-LD block (1) /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS   imgs have alt /blog/nazafatchi-khoob-chetor-entekhab-konim/
+PASS 200 /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS   one <h1> (1) /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS   title (56 chars) /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS   meta description (121 chars) /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS   rtl /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS   no jquery /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS   exactly one JSON-LD block (1) /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS   imgs have alt /blog/cheklist-eib-loolekeshi-va-ghaymat-orjans/
+PASS 200 /faq/
+PASS   one <h1> (1) /faq/
+PASS   title (30 chars) /faq/
+PASS   meta description (99 chars) /faq/
+PASS   rtl /faq/
+PASS   no jquery /faq/
+PASS   exactly one JSON-LD block (1) /faq/
+PASS   JSON-LD valid: HomeAndConstructionBusiness/LocalBusiness, WebPage, BreadcrumbList, FAQPage /faq/
+PASS   imgs have alt /faq/
+PASS 200 /wp-sitemap.xml
+PASS 200 /robots.txt
+PASS 404 status for unknown URL (404)
+PASS 301 /نظافت-منزل-تهران/ -> http://localhost:8088/nazafat-manzel-tehran/
+PASS 301 /تهران/انقلاب/ -> http://localhost:8088/tehran/enghelab/
+PASS service H1 = main keyword
+PASS service price marked as sample
+PASS schema has no address
+PASS schema has areaServed
+PASS neighborhood links to its 3 services
+PASS service page lists linked neighborhoods (two-way relation)
+PASS price page shows updated date
+PASS price table present
+PASS fresh nonce endpoint
+PASS bad nonce rejected (403)
+PASS invalid phone -> 422 + Persian error: شمارهٔ موبایل معتبر نیست. مثال: ۰۹۱۲۱۲۳۴۵۶۷
+PASS missing name/service -> field errors
+PASS honeypot silently accepted, not stored
+PASS valid order stored: KH-1055
+PASS duplicate phone within 5 min -> 429 (429)
+PASS per-IP rate limit kicks in
+PASS wp-content/debug.log empty (no PHP notices/warnings)
+
+256/256 passed

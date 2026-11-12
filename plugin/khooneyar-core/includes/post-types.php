@@ -85,11 +85,19 @@ function khy_service_permalink( $link, $post ) {
  */
 add_filter( 'request', 'khy_resolve_root_services' );
 function khy_resolve_root_services( $qv ) {
-	if ( is_admin() || empty( $qv['pagename'] ) || ! empty( $qv['post_type'] ) ) {
+	if ( is_admin() || ! empty( $qv['post_type'] ) ) {
 		return $qv;
 	}
-	$path = $qv['pagename'];
-	if ( false !== strpos( $path, '/' ) || get_page_by_path( $path ) ) {
+	// Normal case: the generic page rule matched. With "verbose" page rules (permalink structures
+	// that start with a tag after a prefix) WordPress instead reports error=404 for unknown pages.
+	if ( ! empty( $qv['pagename'] ) ) {
+		$path = $qv['pagename'];
+	} elseif ( isset( $qv['error'] ) && '404' === (string) $qv['error'] && ! empty( $GLOBALS['wp']->request ) ) {
+		$path = trim( rawurldecode( $GLOBALS['wp']->request ), '/' );
+	} else {
+		return $qv;
+	}
+	if ( '' === $path || false !== strpos( $path, '/' ) || get_page_by_path( $path ) ) {
 		return $qv;
 	}
 	$service = get_page_by_path( $path, OBJECT, 'service' );
@@ -208,4 +216,13 @@ function khy_set_neighborhood_services( $neighborhood_id, $service_ids ) {
 			add_post_meta( $neighborhood_id, '_khy_service', $sid );
 		}
 	}
+}
+
+/**
+ * Services and neighborhoods are structured landing pages (long HTML + meta boxes):
+ * use the classic editor for them. Pages and blog posts keep the block editor.
+ */
+add_filter( 'use_block_editor_for_post_type', 'khy_classic_for_cpts', 10, 2 );
+function khy_classic_for_cpts( $use, $post_type ) {
+	return in_array( $post_type, array( 'service', 'neighborhood' ), true ) ? false : $use;
 }

@@ -12,7 +12,7 @@ get_header();
 <section class="page-hero">
 	<div class="container">
 		<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-		<h1><?php echo esc_html( get_option( 'page_for_posts' ) ? get_the_title( get_option( 'page_for_posts' ) ) : 'راهنما و مقاله‌ها' ); ?></h1>
+		<h1><?php echo esc_html( get_option( 'page_for_posts' ) ? khy_h1( get_option( 'page_for_posts' ) ) : 'راهنما و مقاله‌ها' ); ?></h1>
 		<?php $blog_lead = get_option( 'page_for_posts' ) ? khy_lead( get_option( 'page_for_posts' ) ) : ''; ?>
 		<?php if ( $blog_lead ) : ?><p class="lead"><?php echo esc_html( $blog_lead ); ?></p><?php endif; ?>
 	</div>
